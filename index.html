@@ -23,7 +23,40 @@
         <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-        
-        <script src="index.js" async defer></script>
+
+            <header class="default-padding">
+                <div class="container">
+                    <h1>Jimmy's Diner</h1>
+                    <h3>The best burgers and pizza in town</h3>
+                </div>
+            </header>
+            <main>
+                <div id="order-container" class="order container">
+                    <div id="content" class="order-items default-padding">
+                    </div>
+                    <div id="order" class="default-padding">
+                        <div id="order-details" class="order-details">
+                            <div class="checkout-item summary">
+                                <h2>Total price:</h2>
+                                <h2>€0</h2>
+                            </div>
+                        </div>
+                        <button id="order-btn" class="order-btn">Complete order</button>
+                    </div>
+                </div>
+            </main>
+            <div id="modal-checkout" class="modal-checkout default-padding">
+                <form>
+                    <h2>Enter card details</h2>
+                    <label class="modal-label">Enter your name</label><br>
+                    <input type="text" placeholder="Enter your name" id="name"><br>
+                    <label class="modal-label">Enter card number</label><br>
+                    <input type="text" placeholder="Enter card number" id="card"><br>
+                    <label class="modal-label">CVV</label><br>
+                    <input type="text" placeholder="cvv" id="cvv"><br>
+                    <button class="order-btn">Pay</button>
+                </form>
+            </div>
+        <script src="index.js" type="module" async defer></script>
     </body>
 </html>
